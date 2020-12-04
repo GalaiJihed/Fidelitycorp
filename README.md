@@ -6,7 +6,13 @@
 <code> https://github.com/GalaiJihed/Fidelitycorp.git </code >
 
 
+## instructions
 
+<ol>
+<li>Run Fidelity  node server  [Here](https://github.com/GalaiJihed/Fidelity-Web-Server)</li>
+ <li>change API_URL in /fidelitycorporation/AppAppConfig.java</li>
+<li>Run the app</li>
+</ol>
 ## :heart: Project Images
 
 <img src="https://user-images.githubusercontent.com/48072325/100456514-cad8ec00-30c0-11eb-98dc-9c57a5321d00.PNG" >
