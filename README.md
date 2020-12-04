@@ -10,7 +10,7 @@
 
 <ol>
 <li>Run Fidelity  node server  [Here](https://github.com/GalaiJihed/Fidelity-Web-Server)</li>
- <li>change API_URL in /fidelitycorporation/AppAppConfig.java</li>
+ <li>change API_URL in /fidelitycorporation/App/AppConfig.java</li>
 <li>Run the app</li>
 </ol>
 ## :heart: Project Images
