@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:background="@color/colorPrimary"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="20dp">
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="146dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:text="Event Details"
+                android:textAlignment="center"
+                android:textColor="#FFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/eventdetail_popup_closebtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/close" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:hint="Event name"
+                android:inputType="none|textMultiLine"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textColorHint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/eventdetail_popup_eventname"
+                android:layout_width="236dp"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:text=""
+                android:textColor="@color/design_default_color_on_primary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="36dp"
+                android:ems="6"
+                android:hint="Event type"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textColorHint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/eventdetail_popup_eventtype"
+                android:layout_width="236dp"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:textColor="@color/design_default_color_on_primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="36dp"
+                android:ems="6"
+                android:hint="Event Date"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textColorHint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/eventdetail_popup_eventDate"
+                android:layout_width="236dp"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:textColor="@color/design_default_color_on_primary" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

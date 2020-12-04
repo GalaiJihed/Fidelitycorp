@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:background="@color/colorPrimary"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="20dp">
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="327dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:text="@string/addEvent"
+                android:textAlignment="center"
+                android:textColor="#FFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/newevent_popup_closebtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/close" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/newevent_popup_eventname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="6"
+            android:hint="Event name"
+            android:inputType="none|textMultiLine"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textColorHint="@color/colorAccent" />
+
+        <Spinner
+            android:id="@+id/newevent_popup_spinnereventtype"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:ems="6"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textColorHint="@color/colorAccent" />
+
+        <Spinner
+            android:id="@+id/newevent_popup_spinnerClientNumber"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:ems="6"
+            android:textColor="@color/colorPrimary"/>
+
+        <Spinner
+            android:id="@+id/newevent_popup_spinnerNotfiyWay"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:ems="6"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textColorHint="@color/colorAccent" />
+
+
+        <Button
+            android:id="@+id/newevent_popup_createbutton"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="#FFFF"
+            android:text="Create event" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

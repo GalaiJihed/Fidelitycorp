@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+    <product>
+        <name>Mojito</name>
+        <id>1</id>
+        <reference>FSSD512SSD</reference>
+        <image>htttp</image>
+        <price>125</price>
+        <reduction>125</reduction>
+        <fidelity>250</fidelity>
+
+    </product>
+
+    <product>
+        <name>Coke</name>
+        <id>2</id>
+        <reference>F5zdza5aas</reference>
+        <image>htttp1</image>
+        <price>105</price>
+        <reduction>10</reduction>
+        <fidelity>350</fidelity>
+
+    </product>
+
+    <product>
+        <name>Express</name>
+        <id>3</id>
+        <reference>SDFEZDS66</reference>
+        <image>htttp3</image>
+        <price>25</price>
+        <reduction>105</reduction>
+        <fidelity>550</fidelity>
+
+    </product>
+    <product>
+        <name>Salim</name>
+        <id>4</id>
+        <reference>SDFEdsZDS66</reference>
+        <image>htttp3</image>
+        <price>6656</price>
+        <reduction>66</reduction>
+        <fidelity>550</fidelity>
+
+    </product>
+
+</products>

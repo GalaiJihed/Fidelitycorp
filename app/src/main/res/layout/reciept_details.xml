@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:background="@color/colorPrimary"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="20dp">
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="194dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:text="Reciept Details"
+                android:textAlignment="center"
+                android:textColor="#FFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/reciept_details_label_price"
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:hint="Price "
+                android:inputType="none"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textColorHint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/reciept_details_price"
+                android:layout_width="236dp"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:text=""
+                android:textColor="@color/design_default_color_on_primary" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/reciept_details_label_fp"
+                android:layout_width="122dp"
+                android:layout_height="36dp"
+                android:ems="6"
+                android:hint="Fidelity Points"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textColorHint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/reciept_details_fp"
+                android:layout_width="236dp"
+                android:layout_height="match_parent"
+                android:ems="6"
+                android:textColor="@color/design_default_color_on_primary" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/details_reciept_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="#FFFF"
+            android:text="Confirm" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

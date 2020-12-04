@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3EBEE"
+    tools:context=".Acts.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFF"
+            android:elevation="5sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profile_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="0dp">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/storeimage"
+                    android:layout_width="183dp"
+                    android:layout_height="82dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_name_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Coffee"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/id_manager_name_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Manager"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.navigation.NavigationView
+                        android:id="@+id/nav_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        app:elevation="5dp"
+                        app:itemHorizontalPadding="20dp"
+                        app:itemIconPadding="30dp"
+                        app:itemTextColor="@color/colorPrimary"
+                        app:menu="@menu/left_bar_nav">
+
+                    </com.google.android.material.navigation.NavigationView>
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:checked="true"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:showText="false"
+                        android:text="LOG ON"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:paddingLeft="20dp"
+                        android:text="Fidelity Corp © 2020 , Made with LOVE"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <!--  <TextView
+                  android:id="@+id/textView4"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/open_sans_semibold"
+                  android:paddingLeft="20sp"
+                  android:paddingTop="10sp"
+                  android:text="FIDELITY CLIENTS"
+                  android:textSize="18sp" />
+
+             <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView12"
+                          android:layout_width="100sp"
+                          android:layout_height="20sp"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/client_icon" />
+
+                      <TextView
+                          android:id="@+id/textView13"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="Clients"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView14"
+                          android:layout_width="100sp"
+                          android:layout_height="30sp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/bday_icon" />
+
+                      <TextView
+                          android:id="@+id/textView15"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="Birthdays"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView16"
+                          android:layout_width="100sp"
+                          android:layout_height="30sp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/plus_icon" />
+
+                      <TextView
+                          android:id="@+id/textView17"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="Newcomers"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+              <TextView
+                  android:id="@+id/textView10"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/open_sans_semibold"
+                  android:paddingLeft="20sp"
+                  android:paddingTop="5sp"
+                  android:text="MANAGEMENT"
+                  android:textSize="18sp" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView23"
+                          android:layout_width="100sp"
+                          android:layout_height="20sp"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/listing_icon" />
+
+                      <TextView
+                          android:id="@+id/textView22"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="Listing"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView21"
+                          android:layout_width="100sp"
+                          android:layout_height="30sp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/settings_icon" />
+
+                      <TextView
+                          android:id="@+id/textView20"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="Settings"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView19"
+                          android:layout_width="80sp"
+                          android:layout_height="30sp"
+                          android:layout_marginLeft="5dp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/review_icon" />
+
+                      <TextView
+                          android:id="@+id/textView18"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="8dp"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="Reviews"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+              <TextView
+                  android:id="@+id/textView12"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/open_sans_semibold"
+                  android:paddingLeft="20sp"
+                  android:paddingTop="5sp"
+                  android:text="SUPPORT"
+                  android:textSize="18sp" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView24"
+                          android:layout_width="100sp"
+                          android:layout_height="30sp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/contact_icon" />
+
+                      <TextView
+                          android:id="@+id/textView25"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="Contact us"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:clickable="true"
+                      android:orientation="horizontal"
+                      android:paddingLeft="60dp">
+
+                      <ImageView
+                          android:id="@+id/imageView26"
+                          android:layout_width="100sp"
+                          android:layout_height="30sp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/help_icon" />
+
+                      <TextView
+                          android:id="@+id/textView27"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:fontFamily="@font/open_sans_semibold"
+                          android:text="View Listings"
+                          android:textSize="24sp"
+                          android:textStyle="bold" />
+
+                  </LinearLayout>
+
+              </LinearLayout>-->
+
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/left_bar_nav" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="01:42 AM"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

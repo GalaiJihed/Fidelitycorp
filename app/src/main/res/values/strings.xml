@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Fidelity Corporation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Update">Update</string>
+    <string name="planets_prompt">planets_prompt</string>
+    <string name="verify">Verify</string>
+    <string name="a_verification_code_has_been_sent_to_your_customer">A verification code has been sent to your customer.</string>
+    <string name="please_enter_your_code">Please Enter Your Code.</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="job_success">Job Success</string>
+    <string name="ui_ux_designer">UI/UX Designer</string>
+    <string name="my_desc">Doing at the sweet spot between aesthetics and elegance to give life to your brand.My opinion belong to nobody but myself.</string>
+    <string name="about_me">About Me</string>
+    <string name="contact">Manager information</string>
+    <string name="other">Subscription Details </string>
+    <string name="ratings">Store Ratings</string>
+    <string name="samplereview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium bibendum sapien, ut euismod massa. Duis convallis sem sed turpis elementum auctor.</string>
+
+    <string name="question_1">Je souhaite consulter mon profile. Comment faire? </string>
+    <string name="question_2">Je souhaite ajouter un neauveau produit. Comment faire? </string>
+    <string name="skills">Skills</string>
+    <string name="event_time">Event time</string>
+    <string name="all_day">All day</string>
+    <string name="event_calendar">Event calendar</string>
+    <string name="addEvent">Add new event</string>
+    <string name="choose_calendar">Choose a calendar</string>
+    <string name="add_description">Add Description for your event.</string>
+    <string name="date_debut">Date Debut </string>
+    <string name="date_fin">Date Fin </string>
+    <string name="add_event">Add</string>
+
+
+    <string-array name="event_types">
+        <item>Happy hour</item>
+        <item>Brand/music</item>
+        <item>Sponsorship</item>
+    </string-array>
+    <string-array name="event_number">
+        <item>All</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="event_notfiyway">
+        <item>Both</item>
+        <item>SMS</item>
+        <item>Notification</item>
+    </string-array>
+
+</resources>

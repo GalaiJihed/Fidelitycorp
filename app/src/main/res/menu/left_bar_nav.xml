@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fidelity_clients"
+        android:title="Fidelity Clients">
+        <menu >
+            <item
+                android:id="@+id/clients"
+                android:icon="@drawable/clients"
+                android:title="Clients" />
+            <item
+                android:id="@+id/birthdays"
+                android:icon="@drawable/birthdays"
+                android:title="Events" />
+            <item
+                android:id="@+id/newcomer"
+                android:icon="@drawable/eventt"
+                android:title="Customers" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/products"
+        android:title="Products" >
+        <menu >
+
+            <item
+                android:id="@+id/AddManually"
+                android:icon="@drawable/addproduct"
+                android:title="Add Product" />
+            <item
+                android:id="@+id/ViewProducts"
+                android:icon="@drawable/viewproduct"
+                android:title="View Products" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/management"
+        android:title="Management" >
+        <menu >
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/review"
+                android:icon="@drawable/stats"
+                android:title="Review" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/support"
+        android:title="Support" >
+        <menu >
+            <item
+                android:id="@+id/contact"
+                android:icon="@drawable/help"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/view"
+                android:icon="@drawable/system"
+                android:title="View Usage" />
+        </menu>
+    </item>
+</menu>

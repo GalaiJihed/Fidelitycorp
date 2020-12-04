@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/left_bar_nav"
+    app:startDestination="@+id/newcomer">
+
+    <fragment
+        android:id="@+id/clients"
+        android:name="com.example.fidelitycorporation.Frags.ClientsFragment"
+        android:label="fragment_clients"
+        tools:layout="@layout/fragment_clients" />
+    <fragment
+        android:id="@+id/birthdays"
+        android:name="com.example.fidelitycorporation.Frags.EventFragment"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/newcomer"
+        android:name="com.example.fidelitycorporation.Frags.NewcomerFragment"
+        android:label="fragment_newcomer"
+        tools:layout="@layout/fragment_newcomer" />
+
+    <fragment
+        android:id="@+id/AddManually"
+        android:name="com.example.fidelitycorporation.Frags.AddProductFragment"
+        android:label="AddProductFragment"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/ViewProducts"
+        android:name="com.example.fidelitycorporation.Frags.ListProductFragment"
+        android:label="ListProductFragment"
+        tools:layout="@layout/fragment_list_product" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.fidelitycorporation.Frags.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/review"
+        android:name="com.example.fidelitycorporation.Frags.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" />
+    <fragment
+        android:id="@+id/contact"
+        android:name="com.example.fidelitycorporation.Frags.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/view"
+        android:name="com.example.fidelitycorporation.Frags.ViewUsageFragment"
+        android:label="fragment_viewusage"
+        tools:layout="@layout/fragment_viewusage" />
+</navigation>
